@@ -22,8 +22,8 @@ for _ in range(t):
     nlist = list(map(int, input().split())) # 정렬된 리스트 입력
 
     m = list(map(int, input().split())) # 쿼리 입력, 해당 쿼리와의 차이가 최대 K인 숫자 개수 찾기
-    
     cnt = 0
+    
     for q in m :
         # [q-k, q+k] 에 속하는 리스트 원소의 개수를 찾아야 함
         cnt += func(q, k, nlist)
